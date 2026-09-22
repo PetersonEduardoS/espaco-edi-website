@@ -1,6 +1,4 @@
-/* ==========================================================================
-   Espaço Edi — Design Tokens
-   ========================================================================== */
+/* Cores e variáveis */
 :root {
   --color-primary: #F3CBFD;
   --color-primary-soft: #FBE7FE;
@@ -26,9 +24,7 @@
   --container-width: 1140px;
 }
 
-/* ==========================================================================
-   Reset
-   ========================================================================== */
+/* Reset */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 
@@ -79,15 +75,11 @@ section > p:not(.eyebrow) {
   margin: 0 auto 3rem;
 }
 
-/* ==========================================================================
-   Reveal on scroll
-   ========================================================================== */
+/* Reveal on scroll */
 .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
 .reveal.is-visible { opacity: 1; transform: none; }
 
-/* ==========================================================================
-   Buttons
-   ========================================================================== */
+/* Buttons */
 .btn {
   display: inline-block;
   padding: 0.85rem 2rem;
@@ -122,9 +114,7 @@ section > p:not(.eyebrow) {
 
 .btn-whatsapp { display: inline-flex; align-items: center; gap: 0.5rem; }
 
-/* ==========================================================================
-   Header / Navbar
-   ========================================================================== */
+/* Header / Navbar */
 .site-header {
   position: sticky;
   top: 0;
@@ -201,9 +191,7 @@ section > p:not(.eyebrow) {
 .nav-toggle.is-open span:nth-child(2) { opacity: 0; }
 .nav-toggle.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* ==========================================================================
-   Hero
-   ========================================================================== */
+/* Hero */
 .hero {
   padding: 4.5rem 1.5rem;
   background: linear-gradient(155deg, var(--color-primary) 0%, var(--color-primary-soft) 42%, var(--color-base) 100%);
@@ -238,9 +226,7 @@ section > p:not(.eyebrow) {
 
 .placeholder-hero { width: 100%; aspect-ratio: 4 / 5; border-radius: var(--radius-md); }
 
-/* ==========================================================================
-   Photo placeholders (shared)
-   ========================================================================== */
+/* Photo placeholders (shared) */
 .photo-placeholder {
   display: flex;
   flex-direction: column;
@@ -263,9 +249,7 @@ section > p:not(.eyebrow) {
 .placeholder-square { width: 100%; aspect-ratio: 1 / 1; }
 .placeholder-tile { width: 100%; aspect-ratio: 1 / 1; border-radius: var(--radius-sm); }
 
-/* ==========================================================================
-   Services
-   ========================================================================== */
+/* Services */
 #services {
   background: var(--color-primary-soft);
 }
@@ -312,9 +296,7 @@ section > p:not(.eyebrow) {
 }
 .technique-pill-accent { background: var(--color-accent); color: var(--color-white); border-color: transparent; }
 
-/* ==========================================================================
-   Gallery
-   ========================================================================== */
+/* Gallery */
 .section-heading-row {
   display: flex;
   align-items: flex-end;
@@ -341,9 +323,7 @@ section > p:not(.eyebrow) {
 .page-gallery { background: linear-gradient(180deg, var(--color-primary-soft) 0%, var(--color-base) 320px); }
 .gallery-full .gallery-grid { margin-top: 2.5rem; text-align: left; }
 
-/* ==========================================================================
-   About
-   ========================================================================== */
+/* About */
 #about {
   background: var(--color-support-soft);
 }
@@ -358,9 +338,7 @@ section > p:not(.eyebrow) {
 .about-text h2 { text-align: left; }
 .about-text p { text-align: left; color: var(--color-text-soft); font-size: 1.02rem; margin-bottom: 1.75rem; max-width: none; }
 
-/* ==========================================================================
-   Contact
-   ========================================================================== */
+/* Contact */
 #contact {
   background: var(--color-primary-soft);
 }
@@ -394,9 +372,7 @@ section > p:not(.eyebrow) {
 .contact-info a { color: var(--color-accent-dark); font-weight: 500; }
 .contact-info a:hover { text-decoration: underline; }
 
-/* ==========================================================================
-   Footer
-   ========================================================================== */
+/* Footer */
 .site-footer { background: var(--color-text); color: var(--color-white); padding: 3.5rem 1.5rem 2rem; }
 
 .footer-grid {
@@ -431,9 +407,7 @@ section > p:not(.eyebrow) {
   text-align: center;
 }
 
-/* ==========================================================================
-   Responsive
-   ========================================================================== */
+/* Responsive */
 @media (max-width: 900px) {
   .hero-inner { grid-template-columns: 1fr; min-height: auto; text-align: center; }
   .hero-content h1, .hero-text { margin-left: auto; margin-right: auto; }
@@ -480,9 +454,7 @@ section > p:not(.eyebrow) {
 }
 
 
-/* ==========================================================================
-   Floating buttons (WhatsApp / Scroll to top)
-   ========================================================================== */
+/* Floating buttons (WhatsApp / Scroll to top) */
 .float-btn {
   position: fixed;
   right: 1.5rem;
